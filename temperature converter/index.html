@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="converter-frame">
+        <div class="status-bar">
+            <span>9:41</span>
+            <span class="status-icons">📶 🔋</span>
+        </div>
+
+        <h1>Temperature converter</h1>
+
+        <div class="input-container">
+            <div class="input-group">
+                <label for="degrees">Degrees</label>
+                <input type="number" id="degrees" value="72" placeholder="Enter temp">
+            </div>
+            <div class="input-group">
+                <label for="type">Type</label>
+                <select id="type">
+                    <option value="fahrenheit" selected>Fahrenheit</option>
+                    <option value="celsius">Celsius</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="result-container">
+            <label>Result</label>
+            <p id="result">22.2222 °C</p>
+        </div>
+
+        <button id="convert-btn">Convert</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
